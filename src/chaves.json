@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hidden-expanse-379520",
+  "private_key_id": "5408ec7bcf5ebff110814adb1c8cca778705211f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDxwqwXICxD75lG\nGCBPFjaAhWFsc2lZJx8JpQMmCcwm5b9490B7vMve66gqMaNOlTHskdksyDef//3y\nAPMeBMzmgvroJs50yxNtFs+6fRv4P4vfRL6TMdmRPODcvZUflJeVxJVa56wYnUiC\nDqMK3m+dG/Tn9ahySiNDr7Al4W/WfmZzDifITOwlNV8HuDk8uhszyO1exHdhbk97\n5AVPswKPiwHE/1TZSnbsXqXNc3uaTbY0gQgcb3d6Uo9xGDjRyRhWsMttzdQRCQrx\nrVySjBFXNMALXdUY/X9Bt/crTQRjQeJqAYdiypmW87RLRJgSEq1iRizXa3M3FTrv\nhdbS/0tjAgMBAAECggEAWx44lyS4mkhJOApqzvP7ybe7rtDW0VO11oA7bhA+QiDQ\naCqkQp63Jgcio/h+aOVBYjzcIg06LdMhZp8mAlfj1DNklq/dm1ZYtYJl+48gxhFJ\nSfaSb07YBe3wgDHx7OunsDpd4luz2Lka9W3H1JZecdPyG6TSfnTj0qR6WuSbLrdM\nncHnObLXxkwuyFP1omJTuvyh4Bmhwc8uqGN10up1S5eihx/rY9ENwBUaYodEe/qF\nyvzKwqlnMMGKOB8mQh735kucK8VDwhajqsy/s/Z0EGdda60k/oosWGn64Y7LH3wU\nET1oUhZl2egqoM2kwQ8VaN1z64b4h8i9a+2p8o+rEQKBgQD9NmlfjTysrxnjt+oy\nEF7OJXeJ+zHQzJT29s5jBVYfZnphwRzMbgmwjBaftlotrY0llhXqU4cHujyL3KM3\nhcHARkhKlybdddok1EBGk9sPV1kduki00J0/P0BqZDs/TI85b18q5apwVxQX8tSx\nep6O7IVI83OR+9OigK3rpMOWEQKBgQD0a/yqTZqv/nVuccv3SAzShw0tjMaHrmmw\nFKxvfJRYArkzvPKrc9saDhBfro8jvXiH+u2VQhbX9dkCwmxow8oXcixa7svSuhsR\n0One0wKS0G6pcRDOwvDaHl/SwuATt/ufjK5bb9YlZrfaeprdYtoaSKPDke/jcQse\niHvFrkQGMwKBgCflaNjrUgILXNLqaXYV6jok4R7We1Tgxx/aZ05mytkLtoCsgrMb\nK1+r0uy7OJ412CVx7mYLXx0ylNOcogLfilWXPVCzXCZMqWBgKPh113AlXR83+Li0\nnfIXLzkULdmdYHu2NpJ1uVMWBU54rlaAcXcngSCrayw3N3NFPyH/xelhAoGBAMaB\nARWqqwtt5B9LajQtHsTIC8rHfuDopErtr1Fn4u5LX/AF7yuRjwrtCx06HmQPV9lP\n0C4dG4JO1uzny7WV9QXvothDAePlY2Cnw5hE1N05S/ZurhDNv1/VtUrtG6DIFiHw\n1hXKkSeU8ZINasKLqsgX4HBPkHyt7TLh82uLaRGDAoGBAOO2p9TvHeo/3Q+ymesW\nSRvyhu/OWwq0QlSBsIY1VGo+fnFeobSggEUqPx5XXqhJWPtNwcaVF6mGow+/xqEw\nkHz48tqVcezq0PHMq4+PswLQeWDYkpmSZ2U5iwVfAvCSdwuvnzLMx1Sgy3acvDI4\ns1dilNM9Xo/bGMfyr/WhXadu\n-----END PRIVATE KEY-----\n",
+  "client_email": "bancodados@hidden-expanse-379520.iam.gserviceaccount.com",
+  "client_id": "111040348216240613598",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bancodados%40hidden-expanse-379520.iam.gserviceaccount.com"
+}
