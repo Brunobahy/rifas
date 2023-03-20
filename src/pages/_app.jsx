@@ -15,6 +15,7 @@ export default function MyApp({ Component, pageProps }) {
                     list-style:none;
                     font-family: 'Open Sans', sans-serif;
                     overflow: overlay;
+                    background-color: #9DC08B;
                 }
                 ::-webkit-scrollbar{
                     width: 3px;
