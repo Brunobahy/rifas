@@ -11,9 +11,17 @@
   "dependencies": {
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
+    "framer-motion": "^10.6.1",
+    "google-drive": "^0.0.8",
     "google-spreadsheet": "^3.3.0",
-    "next": "13.2.4",
+    "next": "^13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "browser": {
+    "child_process": false,
+    "fs": false,
+    "tls": false,
+    "net": false
   }
 }

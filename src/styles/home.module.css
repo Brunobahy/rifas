@@ -1,0 +1,12 @@
+.titulo {
+    font-size: 150px;
+    margin: 0;
+    text-align: center;
+    color: #FFF;
+    filter: drop-shadow(1px 1px black);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background-color: #9DC08B;
+    padding: 10px;
+}

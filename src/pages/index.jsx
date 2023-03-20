@@ -1,49 +1,27 @@
 import Formulario from '@/Components/Formulario'
 import React from 'react'
-import { GoogleSpreadsheet } from 'google-spreadsheet'
-import credenciais from '../chaves.json'
-import Escolha from '@/Components/Escolha';
+import { conectaPlanilha } from '@/env.local'
+import styles from '../styles/home.module.css'
+import {motion} from 'framer-motion'
 
 export async function getServerSideProps(context) {
-
-    const doc = new GoogleSpreadsheet('1oAtW-79F2gtsOuwFsKOt1PGeXRZfS7dWW2M25pxv0ug');
-
-    await doc.useServiceAccountAuth({
-        client_email: credenciais.client_email,
-        private_key: credenciais.private_key,
-    });
-
-    await doc.loadInfo(); // loads document properties and worksheets
-    const sheet = doc.sheetsByIndex[0]
-    const dados = await sheet.getRows()
-
-    const lista = dados.map((dado, index)=> 
-            index={
-                numero: dado.numero,
-                nome: dado.nome || null,
-                instagram: dado.instagram || null,
-                whatsapp: dado.whatsapp || null
-                
-            }
-        )
-
+    const lista = await conectaPlanilha()
     return {
         props: {
-            lista,
+            lista
         }
     }
 }
 
-export default function Home({ lista}) {
-
-    async function enviar(nome, instagram, numero, Whatsapp){
-        
-    }
-
+export default function Home({ lista }) {
     return (
-        <>
-            <h1>Rifas</h1>
-            <Formulario enviar={enviar} lista={lista} />
-        </>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className={styles.container}
+        >
+            <h1 className={styles.titulo}>Rifas</h1>
+            <Formulario lista={lista} />
+        </motion.div>
     )
 }
