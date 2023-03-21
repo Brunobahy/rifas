@@ -6,8 +6,11 @@ import credenciais from '../../chaves.json'
 import styles from './Formulario.module.css'
 import Link from 'next/link';
 import { FlatTree, motion } from 'framer-motion'
+import { useRifasContext } from '@/common/Rifas';
 
 export default function Formulario({ lista }) {
+
+    const {nome, setNome, instagram, setInstagram, whatsapp, setWhatsapp, numeros} = useRifasContext()
 
     async function mudaLinha(nome, instagram, numeros, whatsapp) {
 
@@ -34,20 +37,6 @@ export default function Formulario({ lista }) {
         })
     }
 
-
-    const [nome, setNome] = useState('')
-    const [instagram, setInstagram] = useState('')
-    const [whatsapp, setWhatsapp] = useState('')
-    const [numeros, setNumeros] = useState([])
-
-    function escolhido(numero) {
-        if (!numeros.some(item => item === numero)) {
-            setNumeros([...numeros, numero])
-        } else {
-            setNumeros(numeros.filter(item => item !== numero))
-        }
-    }
-
     return (
         <form
             className={styles.formulario}
@@ -57,7 +46,7 @@ export default function Formulario({ lista }) {
                 <TextInput id={"Instagram"} valor={instagram} change={setInstagram} />
                 <TextInput id={"Whatsapp"} valor={whatsapp} obrigado={true} change={setWhatsapp} />
             </div>
-            <Escolha lista={lista} escolhido={escolhido} numeros={numeros} />
+            <Escolha lista={lista} numeros={numeros} />
             <Link href={'comprovante'} onClick={() => mudaLinha(nome, instagram, numeros, whatsapp)} className={styles.pagamento}><button disabled={nome ? false : true}>Enviar</button></Link>
         </form>
     )

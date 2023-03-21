@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react'
 import styles from './Escolha.module.css'
 import { conectaPlanilha } from '@/env.local'
 import { motion } from 'framer-motion'
+import { useRifasContext } from '@/common/Rifas'
 
-export default function Escolha({ lista, escolhido, numeros }) {
+export default function Escolha({ lista, numeros }) {
+    const { escolhido, valor } = useRifasContext()
 
     const [novaLista, setNovaLista] = useState(lista)
 
@@ -46,6 +48,7 @@ export default function Escolha({ lista, escolhido, numeros }) {
                 : <div className={styles.container}> <img src="/loading.gif" alt="carregando" className={styles.loading} /> </div>
             }
             <h3>Numeros escolhidos: {numeros.join()}</h3>
+            <h3>Valor à Pagar: R${valor},00</h3>
         </>
     )
 }

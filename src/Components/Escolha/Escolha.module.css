@@ -16,6 +16,8 @@
     text-align: center;
     cursor: pointer;
     border-radius: 5px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .ativado {
