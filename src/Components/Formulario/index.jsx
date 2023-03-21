@@ -10,7 +10,7 @@ import { useRifasContext } from '@/common/Rifas';
 
 export default function Formulario({ lista }) {
 
-    const {nome, setNome, instagram, setInstagram, whatsapp, setWhatsapp, numeros} = useRifasContext()
+    const { nome, setNome, instagram, setInstagram, whatsapp, setWhatsapp, numeros } = useRifasContext()
 
     async function mudaLinha(nome, instagram, numeros, whatsapp) {
 
@@ -37,17 +37,24 @@ export default function Formulario({ lista }) {
         })
     }
 
+    const verifica = (nome.length >= 4) && (whatsapp.length === 11) && (numeros.length >= 1)
+
     return (
         <form
             className={styles.formulario}
         >
             <div className={styles.container}>
-                <TextInput id={"Nome"} valor={nome} obrigado={true} change={setNome} />
-                <TextInput id={"Instagram"} valor={instagram} change={setInstagram} />
-                <TextInput id={"Whatsapp"} valor={whatsapp} obrigado={true} change={setWhatsapp} />
+                <TextInput placeholder={"Nome"} id={"Nome"} valor={nome} obrigado={true} change={setNome} />
+                <TextInput placeholder={"Instagram"} id={"Instagram"} valor={instagram} change={setInstagram} />
+                <TextInput placeholder={"(DD) 9-XXXX-XXXX"} id={"Whatsapp"} valor={whatsapp} change={setWhatsapp} />
             </div>
             <Escolha lista={lista} numeros={numeros} />
-            <Link href={'comprovante'} onClick={() => mudaLinha(nome, instagram, numeros, whatsapp)} className={styles.pagamento}><button disabled={nome ? false : true}>Enviar</button></Link>
+            <div className={styles.box_pagamento}>
+                <Link href={'comprovante'} onClick={() => mudaLinha(nome, instagram, numeros, whatsapp)} className={styles.pagamento}><button disabled={!verifica}>Enviar</button></Link>
+                {!(nome.length >= 4) && <span>O nome deve conter pelo menos 4 caracteres</span>}
+                {!(whatsapp.length >= 11) && <span>O Whatsapp deve conter pelo menos 11 caracteres contando com o DDD</span>}
+                {!(numeros.length >= 1) && <span>Você deve escolher pelo menos 1 numero</span>}
+            </div>
         </form>
     )
 }

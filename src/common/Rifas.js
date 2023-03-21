@@ -31,6 +31,7 @@ export function useRifasContext() {
 
     setValor(numeros.length * 5)
 
+
     return {
         escolhido,
         nome,

@@ -6,7 +6,8 @@
     margin: 20px auto;
     gap: 10px;
     list-style: none;
-    padding: 0;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .numeros {
@@ -30,6 +31,7 @@
 
 .escolhido {
     background-color: yellow;
+    animation: jump 400ms infinite alternate;
 }
 
 .loading {
@@ -53,4 +55,15 @@
         align-self: center;
     }
 
+}
+
+
+
+@keyframes jump {
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.1;
+    }
 }
