@@ -37,7 +37,7 @@ export default function Formulario({ lista }) {
         })
     }
 
-    const verifica = (nome.length >= 4) && (whatsapp.length === 11) && (numeros.length >= 1)
+    const verifica = (nome.length >= 4) && (whatsapp.length >= 11) && (numeros.length >= 1)
 
     return (
         
