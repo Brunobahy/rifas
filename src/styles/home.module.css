@@ -1,12 +1,47 @@
 .titulo {
-    font-size: 150px;
+    font-size: 110px;
     margin: 0;
     text-align: center;
-    color: #FFF;
-    filter: drop-shadow(1px 1px black);
-    font-family: Arial, Helvetica, sans-serif;
+    color: #9DC08B;
+    font-family: 'Roboto Serif', serif;
+    /* animation: aparece 2s; */
+    font-weight: 500;
 }
-.container{
+
+.container {
     background-color: #9DC08B;
-    padding: 10px;
+}
+.section{
+    background-color: #FFF;
+    padding: 150px 0 0;
+}
+.box{
+    padding: 0px 0px 20px 0px;
+}
+
+.svg{
+    margin-bottom: -50px;
+}
+ 
+@keyframes aparece {
+    0%{
+        transform: translate(-150px, 0);
+        filter: blur(4px);
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    .section{
+        padding: 0;
+    }
+    .titulo{
+        font-size: 90px;
+    }
+
+    .svg{
+        margin: 0;
+    }
+
 }

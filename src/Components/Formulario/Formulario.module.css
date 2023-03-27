@@ -1,8 +1,12 @@
+.pagina {
+    background-color: #9DC08B;
+}
+
 .formulario {
     width: 90%;
     background-color: #efefef;
     padding: 20px;
-    margin: 20px auto;
+    margin: 0px auto;
     border-radius: 20px;
 }
 
@@ -23,10 +27,11 @@
     align-items: center;
 }
 
-.pagamento{
+.pagamento {
     grid-column: 1;
     grid-row: 1/4;
 }
+
 .pagamento button {
     background: none;
     font-weight: 700;
@@ -38,7 +43,7 @@
     border: none;
 }
 
-.box_pagamento span{
+.box_pagamento span {
     color: red;
     font-weight: 500;
 }
@@ -56,4 +61,17 @@
         padding: 10px;
     }
 
+    .formulario{
+        padding: 10px;
+    }
+
+    .pagamento button {
+        grid-column: 1/3;
+        grid-row: 1;
+        width: 90vw;
+    }
+
+    .box_pagamento span {
+        grid-column: 1/3;
+    }
 }

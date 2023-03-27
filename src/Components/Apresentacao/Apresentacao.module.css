@@ -1,0 +1,40 @@
+.container {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.texto {
+    margin: 0 auto;
+    font-family: 'Josefin Slab', serif;
+    font-size: 30px;
+    font-weight: 100;
+    color: #34402E;
+    width: 70%;
+    /* animation: aparece 2s; */
+    line-height: 40px;
+}
+
+
+@keyframes aparece {
+    0% {
+        transform: translate(-150px, 0);
+        filter: blur(4px);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        margin: 0 auto -15px;
+    }
+
+    .texto {
+        width: 90%;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+}
