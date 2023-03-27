@@ -48,6 +48,9 @@ export default function Formulario({ lista }) {
                 <TextInput placeholder={"Nome"} id={"Nome"} valor={nome} obrigado={true} change={setNome} />
                 <TextInput placeholder={"Instagram"} id={"Instagram"} valor={instagram} change={setInstagram} />
                 <TextInput placeholder={"(DD) 9-XXXX-XXXX"} id={"Whatsapp"} valor={whatsapp} change={setWhatsapp} />
+                <div className={styles.legenda}>Disponível</div>
+                <div className={styles.legenda}>Escolhido</div>
+                <div className={styles.legenda}>Indisponível</div>
             </div>
             <Escolha lista={lista} numeros={numeros} />
             <div className={styles.box_pagamento}>
