@@ -28,7 +28,7 @@ export default function Home({ lista }) {
                 <motion.div
                     initial={{ x: '-150px', opacity: 0, filter: 'blur(4px)' }}
                     animate={{ x: 0, opacity: 1, filter: 'blur(0px)' }}
-                    transition={{ duration: 2 }}
+                    transition={{ duration: 1.2 }}
                 >
 
                     <h1
