@@ -31,6 +31,7 @@ export default function Escolha({ lista, numeros }) {
                     className={styles.container}
                     initial={{ clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)' }}
                     animate={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' }}
+                    transition={{duration: 1}}
                 >
                     {novaLista.map((item, index) =>
                         <li
