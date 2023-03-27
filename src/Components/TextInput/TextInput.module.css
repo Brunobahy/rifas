@@ -19,12 +19,21 @@
     padding: 5px;
     box-shadow: inset 0px 0px 10px 5px #efefef;
     padding: 10px;
+    
+}
+
+.invalido{
+    border: 1px solid red;
+}
+
+.span{
+    font-size: 15px;
+    color: red;
 }
 
 @media screen and (max-width: 600px) {
 
     .container {
-        flex-direction: row;
         justify-content: space-between;
         width: 100%;
     }
